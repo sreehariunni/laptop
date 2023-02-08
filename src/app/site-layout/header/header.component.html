@@ -1,0 +1,42 @@
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <div class="logo-container">
+                <img class="logo" src="https://i.postimg.cc/SsCqMkzk/online-shopping-bag-icon-laptop-sign-cart-185404939.jpg" alt="Logo">
+           &nbsp;&nbsp; <h2 style="color: blue;">GAMI5</h2>
+
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
+           <div class="input-group rounded">
+            <input (keyup)="search($event)" [(ngModel)]="searchterm" type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            
+          </div>
+          
+            </div>
+            
+            <nav>
+                
+                <input class="hidden" type="checkbox" id="menuToggle">
+                <label class="menu-btn" for="menuToggle">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div  class="menu"></div>
+                </label>
+                <div class="nav-container">
+                    <ul class="nav-tabs">
+                        <li class="nav-tab"><a href="" style="text-decoration: none; color: aqua;">HOME</a></li>
+                        <li class="nav-tab" ><a href="/allproducts" style="text-decoration: none; color: aqua;"> TOP DEALS</a></li>
+                        <li class="nav-tab"  ><a href="/product" style="text-decoration: none;color: aqua;">STORE</a></li>
+                        <li class="nav-tab" ><a href="/contactus" style="text-decoration: none;color: aqua;"> CONTACT</a></li>
+                        <li class="nav-tab"><a href="/product/add-product" style="text-decoration: none;color: aqua;">ADD NEW PRODUCT</a></li>
+
+                        <!-- <li class="nav-tab"><a href="" style="text-decoration: none;color: aqua;">REGISTER</a> </li> -->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="center"> 
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; color: yellow;"  ><b>LAPTOPS</b></h1>
+    </div> 
+</body>

@@ -1,0 +1,55 @@
+<br><br><div class="container text-center ">
+    <div class="row ">
+        <div class="p-2 col-3  text-center">
+            <a (click)="filter('')">
+            <img style="height: 150px;"class="w-100"src="https://i.postimg.cc/9QZWZ3y2/e4d395849317f98f2a418c0e10182b0d.gif" alt="">
+            <h6 style="color: white;"> All products</h6>
+        </a>
+        </div>
+        <div class="p-2 col-3">
+            <a (click)="filter(2)">
+            <img style="height: 150px;"class="w-100"src="https://i.postimg.cc/pLRFmBns/gaming-game.gif" alt="">
+            <h6 style="color: white;"> Gaming</h6>
+        </a>
+        </div>
+        <div class="p-2 col-3">
+            <a (click)="filter(1)">
+            <img style="height: 150px;"class="w-100" src="https://i.postimg.cc/WbBdBcVF/ff18c973fdc537fcfaeb2dce46104586.giff" alt="">
+            <h6 style="color: white;"> Apple Products</h6>
+        </a>
+        </div>
+        <div class="p-2 col-3">
+            <a (click)="filter(3)">
+            <img style="height: 150px;"class="w-100"src="https://i.postimg.cc/d3Wxh9qp/634ed93156ec6e3a064fe6c3-gamakaywomier-k61-60-rgb-backlight.gif" alt="">
+            <h6 style="color: white;"> KeyBoards</h6>
+        </a>
+        </div>
+    </div>
+</div>
+<br>
+<!-- --------------------------------------------------------------------------------------------------->
+
+
+ <div class="container">
+    <div class="row">
+     <div *ngFor="let i of filterproducts | filter:searchkey :'productName'" class="col-md-4">
+      <div class="card baseBlock">
+     <img class="card-img-top"   style="height: 230px;  display: block;" src="{{i.productImg}}" data-holder-rendered="true">
+     <div class="card-body">
+       <h3 class="card-title" style="color: black; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>{{i.productName}}</b></h3>
+       <p class="card-text"><b><i>{{i.description}}</i></b></p>
+       
+       <h4 style="color: rgb(0, 0, 0);"><b>{{i.price}}</b></h4> 
+       <div class=" text-center">
+        <a href="product/view-product/{{i.id}}" class="btn btn-primary" >View Options</a>
+       </div>
+     </div>
+   </div>
+     </div>
+   
+       
+      
+       
+     
+    </div>
+   </div>
